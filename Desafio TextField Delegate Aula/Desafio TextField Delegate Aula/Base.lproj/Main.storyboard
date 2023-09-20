@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Desafio_TextField_Delegate_Aula" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ra0-gg-Dv7">
+                                <rect key="frame" x="20" y="99" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-E5-6UV">
+                                <rect key="frame" x="20" y="173" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nse-8Q-afA">
+                                <rect key="frame" x="20" y="247" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqR-58-mGP">
+                                <rect key="frame" x="159" y="321" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="registerTappedFilledButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEM-DB-RxD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nse-8Q-afA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5iQ-Rw-f37"/>
+                            <constraint firstItem="lqR-58-mGP" firstAttribute="top" secondItem="Nse-8Q-afA" secondAttribute="bottom" constant="40" id="76y-cY-Q1m"/>
+                            <constraint firstItem="lqR-58-mGP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8Z-sG-gAE"/>
+                            <constraint firstItem="Ra0-gg-Dv7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FLn-gk-pG0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ra0-gg-Dv7" secondAttribute="trailing" constant="20" id="Nck-10-po2"/>
+                            <constraint firstItem="M6S-E5-6UV" firstAttribute="top" secondItem="Ra0-gg-Dv7" secondAttribute="bottom" constant="40" id="VnL-Ko-j0h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M6S-E5-6UV" secondAttribute="trailing" constant="20" id="lvC-zR-bAX"/>
+                            <constraint firstItem="M6S-E5-6UV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="n40-qg-ocH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nse-8Q-afA" secondAttribute="trailing" constant="20" id="no4-eS-2NM"/>
+                            <constraint firstItem="Ra0-gg-Dv7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="oQj-sI-cOq"/>
+                            <constraint firstItem="Nse-8Q-afA" firstAttribute="top" secondItem="M6S-E5-6UV" secondAttribute="bottom" constant="40" id="xMN-zS-GVt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RegisterFilledButton" destination="lqR-58-mGP" id="ZHQ-bG-wJc"/>
+                        <outlet property="adressTextField" destination="M6S-E5-6UV" id="MFb-jo-3qg"/>
+                        <outlet property="nameTextField" destination="Ra0-gg-Dv7" id="sDO-qh-jwM"/>
+                        <outlet property="passwordTextField" destination="Nse-8Q-afA" id="8EY-Ex-vBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
