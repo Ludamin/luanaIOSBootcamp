@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="FruitsTableViewCell" customModule="Desafio06FrutasTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uTN-4C-nIa">
+                        <rect key="frame" x="20" y="17" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2Vf-O6-af6"/>
+                            <constraint firstAttribute="width" constant="40" id="hrN-jY-StP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipA-5y-GiU">
+                        <rect key="frame" x="75" y="25" width="48" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uTN-4C-nIa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="GHJ-S4-3sI"/>
+                    <constraint firstAttribute="bottom" secondItem="uTN-4C-nIa" secondAttribute="bottom" constant="17" id="M8m-ed-HXf"/>
+                    <constraint firstItem="ipA-5y-GiU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="bfi-we-Y30"/>
+                    <constraint firstAttribute="bottom" secondItem="ipA-5y-GiU" secondAttribute="bottom" constant="25" id="dwz-u3-ELS"/>
+                    <constraint firstItem="ipA-5y-GiU" firstAttribute="leading" secondItem="uTN-4C-nIa" secondAttribute="trailing" constant="15" id="eLS-Ix-ixQ"/>
+                    <constraint firstItem="uTN-4C-nIa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lbl-G1-3vV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="FruitsTableViewCell" destination="H2p-sc-9uM" id="ybn-oo-5bJ"/>
+                <outlet property="fruitImage" destination="uTN-4C-nIa" id="IWJ-c4-oxN"/>
+                <outlet property="fruitLabel" destination="ipA-5y-GiU" id="tgg-V0-nrG"/>
+            </connections>
+            <point key="canvasLocation" x="-85.496183206106863" y="-50.70422535211268"/>
+        </tableViewCell>
+    </objects>
+</document>
